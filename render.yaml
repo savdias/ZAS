@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: zas-inteligencia-territorial
+    runtime: python
+    branch: zas-interface-delivery
+    plan: free
+    buildCommand: pip install -r requirements-deploy.txt
+    startCommand: gunicorn app:server
+    healthCheckPath: /
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.14
