@@ -122,6 +122,13 @@ em `assets/style.css`. Dados, gráficos, fontes tipográficas do sistema e
 contorno geográfico funcionam sem serviços externos, tiles ou chave de API.
 Links de fontes abrem os sites indicados somente ao serem acionados.
 
+## Publicar na internet
+
+A pasta inclui `render.yaml` e `requirements-deploy.txt` para hospedar o site
+no Render usando Gunicorn. Veja o passo a passo em [DEPLOY.md](DEPLOY.md).
+A branch de publicação é `zas-interface-delivery`; o site poderá ser acessado
+por um endereço HTTPS fornecido pela hospedagem.
+
 ## Validar
 
 ```bash
